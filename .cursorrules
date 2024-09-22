@@ -1,0 +1,64 @@
+project_name: WeChatBot
+language: python
+framework: flask
+databases:
+  - mongodb
+
+main_features:
+  - WeChat integration
+  - Large Language Model API integration
+  - API development
+
+coding_standards:
+  - 遵循 PEP 8 Python 代码风格指南
+  - 在函数定义中使用类型提示
+  - 实现错误处理和日志记录
+  - 为所有主要函数编写单元测试
+  - 对 I/O 绑定操作使用 async/await
+  - 实现依赖注入
+  - 使用环境变量进行配置
+  - 为所有类和函数提供文档
+  - 实现 API 版本控制
+  - 使用 dataclasses 创建数据模型
+  - 为 API 端点实现速率限制
+  - 使用 mypy 进行类型检查
+  - 遵循 RESTful API 设计原则
+  - 实现适当的授权和认证
+
+project_structure:
+  - app/
+    - api/
+    - core/
+    - models/
+    - services/
+      - llm/
+    - utils/
+    - wechat/
+  - config/
+  - logs/
+  - tests/
+  - manage.py
+  - requirements.txt
+  - README.md
+
+technologies:
+  - Flask-RESTful: 用于 API 开发
+  - PyMongo: 用于 MongoDB 交互
+  - aiohttp: 用于异步HTTP请求
+  - Python logging 模块: 实现全面的日志记录
+  - GitHub Actions: 实现 CI/CD
+  - Docker: 用于容器化和简化部署
+
+additional_instructions:
+  - 实现服务层以分离业务逻辑和视图
+  - 使用 JWT 或 OAuth2 进行 API 认证
+  - 实现基于角色的访问控制
+  - 使用 pytest 创建单元测试
+  - 对敏感信息使用环境变量
+  - 实现异步编程模式
+  - 使用依赖注入设计模式
+  - 遵循 Google Python 风格指南编写文档字符串
+  - 实现与大型语言模型API的集成
+  - 优化对话管理和上下文处理
+  - 实现错误处理和重试机制
+  - 考虑实现对话历史存储和检索
